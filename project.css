@@ -1,0 +1,55 @@
+.container {
+   max-width: 1120px;
+    /*margin: 0 auto;*/
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+            max-width: none;
+        margin: 19px 16px;
+    }
+    /* стили для sm-устройств */
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 750px;
+        margin: 19px 16px;
+    }
+    /* стили для md-устройств */
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 768px;
+        margin: 19px 16px;
+    }
+    /* стили для lg-устройств */
+}
+.header {
+    display: flex;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+.header__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0px;
+}
+.header__div {
+    background-color: #EAEAEA;
+    height: 32px;
+    width: 2px;
+    border-radius: 1px;
+}
+.header__button_theme_menu {
+    background-image: url("img/menu.svg");
+
+}
+.header__button_theme_repair_request {
+    background-image: url("img/repair_request.svg");
+}
+.header__button_theme_repair_status {
+    background-image: url("img/repair_status.svg");
+}
